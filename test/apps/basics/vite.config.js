@@ -1,16 +1,17 @@
 import * as path from 'node:path';
 import { sveltekit } from '@sveltejs/kit/vite';
-import { enhancedImages } from '../../../src/index.js';
+import { mdEnhancedImages } from '../../../src/index.js';
 
 /** @type {import('vite').UserConfig} */
 const config = {
 	build: {
 		minify: false
 	},
-	plugins: [enhancedImages(), sveltekit()],
+	// @ts-ignore
+	plugins: [mdEnhancedImages(), sveltekit()],
 	server: {
 		fs: {
-			allow: [path.resolve('../../../../kit/src')]
+			allow: [path.resolve('../../../../')]
 		}
 	}
 };

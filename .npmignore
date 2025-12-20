@@ -1,0 +1,47 @@
+# Source control
+.git/
+.gitignore
+
+# Development files
+*.spec.js
+*.test.js
+test/
+enhanced-img/
+md-enhanced-images/
+vitest.config.js
+tsconfig.json
+TESTING.md
+
+# Build artifacts
+.svelte-kit/
+build/
+dist/
+coverage/
+
+# CI/CD
+.github/
+.circleci/
+.travis.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+
+# Misc
+*.md~
+*.bak
+.cache/

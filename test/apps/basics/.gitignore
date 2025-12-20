@@ -1,0 +1,23 @@
+# SvelteKit build output
+.svelte-kit/
+build/
+
+# Node
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Testing
+playwright-report/
+test-results/
+playwright/.cache/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
